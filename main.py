@@ -49,6 +49,8 @@ model = Net().to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 criterion = nn.CrossEntropyLoss()
 
+
+######### train
 def train(epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
@@ -63,6 +65,8 @@ def train(epoch):
         if batch_idx % 100 == 0:
             print(f'Train Epoch: {epoch} Loss: {loss.item():.6f}')
 
+
+######### test
 def test():
     model.eval()
     test_loss = 0
@@ -81,7 +85,7 @@ def test():
 
 
 
-
+########### run
 num_epochs = 10
 
 for epoch in range(1, num_epochs + 1):
