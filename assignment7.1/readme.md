@@ -32,7 +32,7 @@ The metrics below demonstrate the baseline model performance versus model degrad
 
 | Metric | Clean Baseline | FGSM ASR | PGD ASR | Momentum ASR |
 | :--- | :---: | :---: | :---: | :---: |
-| **Model Accuracy** | [99.21 %] | [76.47 %] | [99.99 %] | [100 %] |
+| **Model Accuracy** | [97.21 %] | [76.47 %] | [99.99 %] | [100 %] |
 
 *(Note: Data automatically extracted from local execution log `results.txt`)*
 
