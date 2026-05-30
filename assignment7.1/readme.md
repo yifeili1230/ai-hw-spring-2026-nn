@@ -32,8 +32,7 @@ The metrics below demonstrate the baseline model performance versus model degrad
 
 | Metric | Clean Baseline | FGSM Attack | PGD Attack | Momentum IFGSM |
 | :--- | :---: | :---: | :---: | :---: |
-| **Model Accuracy** | [Clean %] | [FGSM Acc %] | [PGD Acc %] | [MI-FGSM Acc %] |
-| **Adversarial Success (ASR)** | *0.00%* | **[FGSM ASR]%** | **[PGD ASR]%** | **[MI-FGSM ASR]%** |
+| **Model Accuracy** | [99.21 %] | [76.47 %] | [99.99 %] | [100 %] |
 
 *(Note: Data automatically extracted from local execution log `results.txt`)*
 
