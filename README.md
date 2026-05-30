@@ -1,11 +1,11 @@
 # Assignment #4.1: MNIST Digit Recognition via CNN
 
-## 📌 Presentation Overview
+##  Presentation Overview
 This project implements a Convolutional Neural Network (CNN) in PyTorch to classify handwritten digits from the MNIST dataset. The training pipeline integrates spatial data augmentation to enhance model generalization and robustness against variations in handwriting styles.
 
 ---
 
-## 🛠️ System Architecture & Pipeline
+##  System Architecture & Pipeline
 
 ### 1. Data Augmentation Pipeline
 To prevent overfitting and simulate realistic handwriting variances, the training dataset undergoes dynamic transformations:
@@ -35,7 +35,7 @@ The model utilizes a deep convolutional architecture optimized for spatial featu
 
 ---
 
-## 📈 Performance & Results
+##  Performance & Results
 * **Training Dynamics:** Steady convergence observed over 10 epochs with a sharp decline in training loss within the first 300 batches.
 * **Final Test Accuracy:** **[96.12%]%**
 * **Core Takeaway:** Integrating affine distortions directly into the PyTorch `Dataloader` pipeline successfully regularized the network, matching state-of-the-art accuracy without requiring a deeper architecture.
