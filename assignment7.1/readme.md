@@ -12,18 +12,14 @@ All attacks operate in a **white-box setting**, leveraging direct access to the 
 ### 1. Fast Gradient Sign Method (FGSM)
 * **Type:** Single-step fast optimization.
 * **Mechanism:** Computes the gradient of the loss with respect to the input image and takes a single step in the direction of the sign of the gradient.
-* $$x_{adv} = x + \epsilon \cdot \text{sign}(\nabla_x L(\theta, x, y))$$
 
 ### 2. Projected Gradient Descent (PGD)
 * **Type:** Iterative optimization (Multi-step FGSM).
 * **Mechanism:** Takes multiple smaller gradient steps ($\alpha$) and projects the resulting perturbation back into the feasible $\epsilon$-ball after each iteration. It acts as an iterative local optimizer to find the worst-case noise.
-* $$x^{t+1} = \Pi_{x + \mathcal{S}} \left( x^t + \alpha \cdot \text{sign}(\nabla_x L(\theta, x^t, y)) \right)$$
 
 ### 3. Momentum Iterative FGSM (MI-FGSM)
 * **Type:** Momentum-integrated iterative optimization.
 * **Mechanism:** Accumulates velocity vectors into the gradient updates across iterations. This stabilizes the update directions, helping the attack escape poor local maxima and plateau regions.
-* $$g_{t+1} = \mu \cdot g_t + \frac{\nabla_x L(\theta, x^t, y)}{\|\nabla_x L(\theta, x^t, y)\|_1}$$
-* $$x^{t+1} = \Pi_{x + \mathcal{S}} \left( x^t + \alpha \cdot \text{sign}(g_{t+1}) \right)$$
 
 ---
 
