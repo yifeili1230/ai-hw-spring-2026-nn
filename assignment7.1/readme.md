@@ -30,7 +30,7 @@ All attacks operate in a **white-box setting**, leveraging direct access to the 
 ## 📊 Comparative Evaluation Matrix
 The metrics below demonstrate the baseline model performance versus model degradation under adversarial stress:
 
-| Metric | Clean Baseline | FGSM Attack | PGD Attack | Momentum IFGSM |
+| Metric | Clean Baseline | FGSM ASR | PGD ASR | Momentum ASR |
 | :--- | :---: | :---: | :---: | :---: |
 | **Model Accuracy** | [99.21 %] | [76.47 %] | [99.99 %] | [100 %] |
 
