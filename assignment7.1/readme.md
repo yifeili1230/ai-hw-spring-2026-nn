@@ -39,6 +39,6 @@ The metrics below demonstrate the baseline model performance versus model degrad
 ---
 
 ## Key Analytical Findings
-1.  **Iterative Dominance:** Iterative attacks (**PGD** and **MI-FGSM**) yield a vastly superior ASR compared to single-step **FGSM**, proving that linear approximations fail to fully capture the complex decision boundaries of the CNN.
+1.  **Iterative Dominance:** Iterative attacks (**PGD** and **Momentum**) yield a vastly superior ASR compared to single-step **FGSM**, proving that linear approximations fail to fully capture the complex decision boundaries of the CNN.
 2.  **Momentum Efficiency:** Momentum IFGSM maintains effective optimization paths even in flat loss landscapes, making it the most lethal threat vector against this model structure.
 3.  **Conclusion:** High test accuracy on a clean dataset creates a false sense of security; the model remains highly fragile to structured, gradient-directed adversarial input.
