@@ -7,7 +7,7 @@ This project evaluates the adversarial vulnerability of our trained MNIST CNN. B
 
 ## 🧪 Implemented Attack Methodologies
 
-All attacks operate in a **white-box setting**, leveraging direct access to the model's gradients ($\nabla_x L(\theta, x, y)$) under strict $L_\infty$ or $L_2$ budget constraints ($\epsilon$).
+All attacks operate in a **white-box setting**, leveraging direct access to the model's gradients (nabla_x L(theta, x, y)$) under strict $L_\infty$ or $L_2$ budget constraints ($\epsilon$).
 
 ### 1. Fast Gradient Sign Method (FGSM)
 * **Type:** Single-step fast optimization.
