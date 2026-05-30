@@ -37,5 +37,5 @@ The model utilizes a deep convolutional architecture optimized for spatial featu
 
 ## 📈 Performance & Results
 * **Training Dynamics:** Steady convergence observed over 10 epochs with a sharp decline in training loss within the first 300 batches.
-* **Final Test Accuracy:** **[Insert your text accuracy, e.g., 99.12%]%**
+* **Final Test Accuracy:** **[96.12%]%**
 * **Core Takeaway:** Integrating affine distortions directly into the PyTorch `Dataloader` pipeline successfully regularized the network, matching state-of-the-art accuracy without requiring a deeper architecture.
